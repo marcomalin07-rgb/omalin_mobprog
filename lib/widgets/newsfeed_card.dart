@@ -17,7 +17,7 @@ class NewsfeedCard extends StatelessWidget {
     required this.postContent,
     required this.date,
     this.numOfLikes,
-    this.hasImage,
+    this.hasImage, required String avatarPath,
   });
 
   @override
@@ -75,10 +75,18 @@ class NewsfeedCard extends StatelessWidget {
               color: Colors.black,
             ),
             SizedBox(height: 5.h),
-            if (hasImage == true)
-              const Center(
-                child: Icon(Icons.image, size: 100),
-              ),
+            hasImage == true
+                ? Image.asset(
+                    'assets/images/nyek_mo.jpg',
+                    fit: BoxFit.cover,
+                  )
+                : const SizedBox.shrink(),
+             hasImage == true
+                ? Image.asset(
+                    'assets/images/cat_mo.jpg',
+                    fit: BoxFit.cover,
+                  )
+                : const SizedBox.shrink(),    
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

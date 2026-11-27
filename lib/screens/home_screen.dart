@@ -2,6 +2,7 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:omalin_mobprog/constants.dart';
 import 'package:omalin_mobprog/screens/newsfeed_screen.dart';
+import 'package:omalin_mobprog/screens/notification_screen.dart';
 import 'package:omalin_mobprog/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
@@ -22,24 +23,32 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         shadowColor: fbTextColorWhite,
         elevation: 2,
-        title: CustomText(
-          text: 'Facebook',
+        title:_selectedIndex==0? CustomText(
+          text: 'Maku FYP',
+          fontSize: 25.sp,
+          color:fbPrimary,
+          fontWeight: FontWeight.bold,
+        ):
+         CustomText(
+          text: 'Notifications',
           fontSize: 25.sp,
           color:fbPrimary,
           fontWeight: FontWeight.bold,
         ),
+        
       ),
       body: PageView(
         controller: _pageController,
         children: const [
           NewsfeedScreen(),
-          Center(child: Text('Notifications')),
+          NotificationScreen(),
         ],
         onPageChanged: (page) {
           setState(() {
             _selectedIndex = page;
           });
         },
+        
       ),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
@@ -54,6 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.notifications),
             label: 'Notifications',
           ),
+          
+          
         ],
         selectedItemColor: fbPrimary,
         currentIndex: _selectedIndex,

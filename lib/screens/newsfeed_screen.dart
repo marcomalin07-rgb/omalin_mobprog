@@ -13,7 +13,9 @@ class NewsfeedScreen extends StatelessWidget {
           userName: 'Steve Rogers',
           postContent: 'I can do this all day! #AvengersAssemble',
           date: '2 hours ago',
-          numOfLikes: 10,
+          numOfLikes: 10, 
+          avatarPath: 'assets/images/nyek_mo.jpg' ,
+          hasImage: true,
         ),
         NewsfeedCard(
           userName: 'Tony Stark',
@@ -21,8 +23,108 @@ class NewsfeedScreen extends StatelessWidget {
               'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
           date: 'December 1, 2023',
           numOfLikes: 3000,
-          hasImage: true,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true,  
         ),
+        NewsfeedCard(
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),  
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        ),
+        NewsfeedCard( 
+          userName: 'Tony Stark',
+          postContent:
+              'I am Iron Man. #GeniusBillionairePlayboyPhilanthropist',
+          date: 'December 1, 2023',
+          numOfLikes: 3000,
+          avatarPath: 'assets/images/cat_mo.jpg',
+          hasImage: true
+        )
       ],
     );
   }

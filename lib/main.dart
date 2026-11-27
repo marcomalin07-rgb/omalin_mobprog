@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:omalin_mobprog/screens/home_screen.dart';
 import 'package:omalin_mobprog/screens/newsfeed_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:omalin_mobprog/screens/profile_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -23,8 +24,11 @@ class MainApp extends StatelessWidget {
           title: 'Facebook Replication',
           initialRoute: '/home',
           routes: {
-            '/newsfeed': (context) => const NewsfeedScreen(),
-            '/home': (context) => const HomeScreen(),
+ '/newsfeed': (context) => const NewsfeedScreen(),
+ '/home': (context) => const HomeScreen(),
+  '/profile': (context) => const ProfileScreen(), // make sure ProfileScreen is imported
+ '/': (context) => const HomeScreen(),
+
           },
         );
       },
